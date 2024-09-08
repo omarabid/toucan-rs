@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "toucan-build",
+  "version": "4.0.0",
+  "dependencies": {
+    "toucan-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.21.2"
+  },
+  "scripts": {
+    "build": "rollup -c && mv toucan.js ../src/js"
+  }
+}
